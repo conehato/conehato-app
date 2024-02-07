@@ -3,14 +3,26 @@
     "version": ">= 7.1.2"
   },
   "build": {
-    "development": {
+    "local": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": { "APP_VARIANT": "local" },
+      "channel": "local"
     },
-    "preview": {
-      "distribution": "internal"
+    "dev": {
+      "distribution": "internal",
+      "env": { "APP_VARIANT": "dev" },
+      "channel": "dev"
     },
-    "production": {}
+    "stage": {
+      "env": { "APP_VARIANT": "stage" },
+      "android": { "buildType": "apk" },
+      "channel": "stage"
+    },
+    "production": {
+      "env": { "APP_VARIANT": "production" },
+      "channel": "production"
+    }
   },
   "submit": {
     "production": {}
