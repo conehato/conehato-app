@@ -1,18 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { SplashScreen } from '@/components/app';
+import { Text } from '@/components/ui';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <SplashScreen>
+      <Text style={{ fontWeight: 'bold' }}>
+        Open up App.tsx to start working on your app! 한국어 コネハト
+      </Text>
+      <Text>Open up App.tsx to start working on your app! 한국어 コネハト</Text>
+
+      <Text style={{ fontWeight: 'bold', fontFamily: 'NotoSans' }}>
+        Open up App.tsx to start working on your app! 한국어 コネハト
+      </Text>
+      <Text style={{ fontFamily: 'NotoSans' }}>
+        Open up App.tsx to start working on your app! 한국어 コネハト
+      </Text>
+    </SplashScreen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

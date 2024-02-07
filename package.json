@@ -6,20 +6,40 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:local": "eas build --profile local",
+    "build:dev": "eas build --profile dev",
+    "build:stage": "eas build --profile stage",
+    "build:production": "eas build --profile production",
+    "build": "expo export --output-dir ./build --platform all"
   },
   "dependencies": {
     "expo": "^50.0.1",
+    "expo-dev-client": "~3.3.8",
+    "expo-font": "~11.10.2",
+    "expo-notifications": "~0.27.6",
+    "expo-splash-screen": "~0.26.4",
+    "expo-updates": "~0.24.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.2",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "react-native-webview": "13.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@types/node": "^20.11.16",
     "@types/react": "~18.2.14",
     "@types/react-native": "~0.70.6",
+    "eslint": "^8.56.0",
+    "eslint-config-universe": "^12.0.0",
+    "prettier": "^3.2.5",
     "typescript": "^5.1.3"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }
