@@ -32,6 +32,9 @@ dependencies:
   react-native:
     specifier: 0.73.2
     version: 0.73.2(@babel/core@7.23.9)(@babel/preset-env@7.23.9)(react@18.2.0)
+  react-native-safe-area-context:
+    specifier: 4.8.2
+    version: 4.8.2(react-native@0.73.2)(react@18.2.0)
   react-native-web:
     specifier: ~0.19.6
     version: 0.19.10(react-dom@18.2.0)(react@18.2.0)
@@ -7027,6 +7030,16 @@ packages:
 
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
+    dev: false
+
+  /react-native-safe-area-context@4.8.2(react-native@0.73.2)(react@18.2.0):
+    resolution: {integrity: sha512-ffUOv8BJQ6RqO3nLml5gxJ6ab3EestPiyWekxdzO/1MQ7NF8fW1Mzh1C5QE9yq573Xefnc7FuzGXjtesZGv7cQ==}
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+    dependencies:
+      react: 18.2.0
+      react-native: 0.73.2(@babel/core@7.23.9)(@babel/preset-env@7.23.9)(react@18.2.0)
     dev: false
 
   /react-native-web@0.19.10(react-dom@18.2.0)(react@18.2.0):

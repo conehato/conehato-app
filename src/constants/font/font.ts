@@ -14,7 +14,7 @@ export const fonts = fontList;
 
 export const fontWeightToFamily = Object.keys(fonts).reduce(
   (prev, curr) => {
-    return { ...prev, [curr.split('_')[0]]: curr };
+    return { ...prev, [curr.split('_')[1]]: curr };
   },
   {} as Record<FontWeightUnion, FontFamilyUnion>
 );
