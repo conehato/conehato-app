@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { View } from 'react-native';
 import { useSafeAreaInsets, SafeAreaProvider } from 'react-native-safe-area-context';
 import WebView from 'react-native-webview';
 
@@ -32,9 +33,8 @@ function Home() {
   const { bottom, top } = useSafeAreaInsets();
 
   return (
-    <WebView
-      style={{ flex: 1, paddingBottom: bottom, paddingTop: top }}
-      source={{ uri: 'https://conehato.com' }}
-    />
+    <View style={{ flex: 1, paddingBottom: bottom, paddingTop: top }}>
+      <WebView style={{ flex: 1 }} source={{ uri: 'https://conehato.com' }} />
+    </View>
   );
 }

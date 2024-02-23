@@ -11,7 +11,7 @@
     "build:dev": "eas build --profile dev",
     "build:stage": "eas build --profile stage",
     "build:production": "eas build --profile production",
-    "build": "expo export --output-dir ./build --platform all"
+    "build": "expo export --output-dir ./build --platform ios"
   },
   "dependencies": {
     "expo": "^50.0.1",

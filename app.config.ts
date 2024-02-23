@@ -27,7 +27,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
 
   const expoProjectId = 'ba177807-1b2a-47c0-9133-2e9757abdaa3';
 
-  const version = '0.0.1';
+  const version = '1.0.0';
   const buildNumber = 1;
 
   return {
@@ -35,6 +35,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     name: appName[APP_VARIANT],
     scheme: scheme[APP_VARIANT],
     slug: 'conehato',
+    runtimeVersion: version,
     version,
     orientation: 'portrait',
     icon: './assets/icon.png',
