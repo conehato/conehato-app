@@ -50,7 +50,7 @@ export function Text({
   enableNormalize,
   color,
   fontStyle = 'default',
-  fontWeight = 'Medium',
+  fontWeight = 'medium',
   ...props
 }: TextProps) {
   const textStyle = useMemo(() => {
