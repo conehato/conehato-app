@@ -28,7 +28,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
   const expoProjectId = 'ba177807-1b2a-47c0-9133-2e9757abdaa3';
 
   const version = '1.0.0';
-  const buildNumber = 2;
+  const buildNumber = 3;
 
   return {
     ...config,
@@ -63,5 +63,6 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     updates: {
       url: `https://conehato-app-update-server.vercel.app/api/update/expo/manifests/release/${APP_VARIANT}/latest`,
     },
+    plugins: ['./plugin/app.plugin.js'],
   };
 };
