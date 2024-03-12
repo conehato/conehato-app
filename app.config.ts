@@ -28,7 +28,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
   const expoProjectId = 'ba177807-1b2a-47c0-9133-2e9757abdaa3';
 
   const version = '1.0.0';
-  const buildNumber = 1;
+  const buildNumber = 2;
 
   return {
     ...config,
@@ -48,7 +48,6 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     ios: {
       bundleIdentifier: bundleIdentifier[APP_VARIANT],
       buildNumber: String(buildNumber),
-      supportsTablet: true,
       config: { usesNonExemptEncryption: false },
     },
     android: {
